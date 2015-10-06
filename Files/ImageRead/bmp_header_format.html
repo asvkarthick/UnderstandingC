@@ -1,0 +1,240 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+
+<title> BMP (Windows) Header Format </title>
+
+<meta http-equiv="Description" name="Description" content="Fastgraph
+for Windows Online Help">
+
+<meta http-equiv="Keywords" name="Keywords" content="Fastgraph,
+graphics, animation, render, rendering, software, blitting, DirectX,
+Direct3D, games, library, programming, developer, development, Windows,
+game developing, DirectDraw, C, C++, C/C++, Visual C++, Borland C++Builder,
+Builder, Delphi, VisualBasic, Basic, Windows 95 98 2000 NT,Diana Gruber, Ted Gruber, Ted Gruber Software, Inc.">
+
+</head><body vlink="#d00000" bgcolor="#ffffff" link="#f00000" text="#000000">
+
+<center>
+<table width="90%" border="0" cellpadding="1" cellspacing="1">
+ <tbody><tr>
+  <td>
+
+<h1>BMP (Windows) Header Format</h1><p>
+Windows BMP files begin with a 54-byte header:</p><p>
+</p><center>
+<p>
+ </p><table topmargin="0" bottommargin="0" border="1" cellpadding="12" cellspacing="0"><tbody><tr>
+  <td>
+<b>offset</b><p>
+  </p></td>
+  <td>
+<b>size</b><p>
+  </p></td>
+  <td>
+<b>description</b><p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+0<p>
+  </p></td>
+  <td>
+2<p>
+  </p></td>
+  <td>
+signature, must be 4D42 hex<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+2<p>
+  </p></td>
+  <td>
+4<p>
+  </p></td>
+  <td>
+size of BMP file in bytes (unreliable)<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+6<p>
+  </p></td>
+  <td>
+2<p>
+  </p></td>
+  <td>
+reserved, must be zero<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+8<p>
+  </p></td>
+  <td>
+2<p>
+  </p></td>
+  <td>
+reserved, must be zero<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+10<p>
+  </p></td>
+  <td>
+4<p>
+  </p></td>
+  <td>
+offset to start of image data in bytes<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+14<p>
+  </p></td>
+  <td>
+4<p>
+  </p></td>
+  <td>
+size of BITMAPINFOHEADER structure, must be 40<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+18<p>
+  </p></td>
+  <td>
+4<p>
+  </p></td>
+  <td>
+image width in pixels<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+22<p>
+  </p></td>
+  <td>
+4<p>
+  </p></td>
+  <td>
+image height in pixels<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+26<p>
+  </p></td>
+  <td>
+2<p>
+  </p></td>
+  <td>
+number of planes in the image, must be 1<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+28<p>
+  </p></td>
+  <td>
+2<p>
+  </p></td>
+  <td>
+number of bits per pixel (1, 4, 8, or 24)<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+30<p>
+  </p></td>
+  <td>
+4<p>
+  </p></td>
+  <td>
+compression type (0=none, 1=RLE-8, 2=RLE-4)<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+34<p>
+  </p></td>
+  <td>
+4<p>
+  </p></td>
+  <td>
+size of image data in bytes (including padding)<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+38<p>
+  </p></td>
+  <td>
+4<p>
+  </p></td>
+  <td>
+horizontal resolution in pixels per meter (unreliable)<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+42<p>
+  </p></td>
+  <td>
+4<p>
+  </p></td>
+  <td>
+vertical resolution in pixels per meter (unreliable)<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+46<p>
+  </p></td>
+  <td>
+4<p>
+  </p></td>
+  <td>
+number of colors in image, or zero<p>
+  </p></td>
+ </tr>
+ <tr>
+  <td>
+50<p>
+  </p></td>
+  <td>
+4<p>
+  </p></td>
+  <td>
+number of important colors, or zero<p>
+  </p></td>
+ </tr>
+</tbody></table>
+</center><p>
+</p><center>
+<p>
+ </p><table topmargin="0" bottommargin="0" border="1" cellpadding="12" cellspacing="0"><tbody><tr>
+  <td>
+<center> <a href="http://www.fastgraph.com/help/image_file_header_formats.html">&lt;&lt; Prev</a></center><p>
+  </p></td>
+  <td>
+<center> <a href="http://www.fastgraph.com/help/bmp_os2_header_format.html">Next &gt;&gt;</a></center><p>
+  </p></td>
+ </tr>
+</tbody></table>
+</center><p>
+  </p></td>
+ </tr>
+</tbody></table>
+</center>
+<p>
+
+</p><center>
+<a href="http://www.fastgraph.com/help/contents.html">Contents</a><br><a href="http://www.fastgraph.com/">Fastgraph Home Page</a><p> <font color="#000080" size="1">
+&nbsp;</font></p><p>
+<font color="#000080" size="1">  copyright 2001 Ted Gruber Software, Inc.
+</font></p><p><font color="#000080" size="1"> </font>
+</p></center>
+</body></html>
