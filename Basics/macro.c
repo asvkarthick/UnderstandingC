@@ -5,6 +5,18 @@
 #define square(x) x * x
 #define concat(x,y) x##y
 
+#ifdef DEBUG
+#define VAR 100
+#else
+#define VAR 200
+#endif
+
+#if SYSTEM == 100
+#define SYSTEM 100
+#else
+#define SYSTEM 200
+#endif
+
 int main()
 {
     int product;
@@ -29,6 +41,9 @@ int main()
 
     concat(a, b) = 100;
     printf("ab = %d\n", ab);
+
+    printf("VAR = %d\n",VAR);
+    printf("SYSTEM = %d\n", SYSTEM);
 
     return 0;
 }
