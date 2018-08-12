@@ -9,5 +9,8 @@ int main(void)
     printf("%d\n", **ptr);
     printf("%d\n", *ptr2);
 
+    printf("ptr = %p, ptr + 1 = %p\n", ptr, ptr + 1);
+    printf("ptr2 = %p, ptr2 + 1 = %p\n", ptr2, ptr2 + 1);
+
     return 0;
 }
